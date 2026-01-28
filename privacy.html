@@ -22,7 +22,7 @@
         }
         h1 {
             text-align: center;
-            color: #d32f2f; /* Festive red */
+            color: #d32f2f;
             font-size: 26px;
             margin-bottom: 5px;
         }
@@ -39,6 +39,11 @@
             padding-bottom: 10px;
             margin-top: 30px;
         }
+        h3 {
+            font-size: 16px;
+            color: #444;
+            margin-top: 20px;
+        }
         p, li {
             font-size: 15px;
             margin-bottom: 10px;
@@ -47,12 +52,27 @@
             padding-left: 20px;
         }
         .highlight-box {
-            background-color: #e8f5e9; /* Light green for "safe" feeling */
+            background-color: #e8f5e9;
             border-left: 4px solid #4caf50;
             padding: 15px;
             margin: 20px 0;
             font-size: 14px;
             color: #2e7d32;
+        }
+        .firebase-box {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #ef6c00;
+        }
+        a {
+            color: #d32f2f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .footer {
             margin-top: 40px;
@@ -72,11 +92,11 @@
     <p style="text-align: center; font-size: 13px; color: #888;">Last updated: January 2026</p>
 
     <p>This Privacy Policy explains how <strong>Thoi Nguyen</strong> ("we", "us", or "our") collects, uses, and discloses information about you when you use our mobile application "Chúc Tết 2026" (the "App").</p>
-    
+
     <p>By using the App, you agree to the collection and use of information in accordance with this policy.</p>
 
     <h2>1. Information We Collect</h2>
-    
+
     <div class="highlight-box">
         <strong>Privacy First:</strong> We do not collect, store, or share your personal photos, contacts, or precise location data. All greeting card customization happens locally on your device.
     </div>
@@ -84,43 +104,52 @@
     <h3>a. Personal Information</h3>
     <p>We do not require you to create an account to use the App. We do not collect personally identifiable information such as your name, email address, phone number, or home address.</p>
 
-    <h3>b. Usage Data</h3>
-    <p>We may collect anonymous usage data to help us improve the App. This includes information such as:</p>
+    <h3>b. Usage & Device Data (via Firebase)</h3>
+    <p>To help us improve the App and fix bugs, we use Google Firebase services. These services may collect:</p>
     <ul>
-        <li>Device type (e.g., iPhone 15, iPad Pro).</li>
-        <li>Operating system version (e.g., iOS 18.0).</li>
-        <li>Crash reports and performance data (to help us fix bugs).</li>
+        <li>Device Information (e.g., iPhone model, iOS version).</li>
+        <li>App Usage Data (e.g., how long the app is used, which screens are visited).</li>
+        <li>Crash Reports (e.g., stack traces when the app closes unexpectedly).</li>
+        <li>Installation UUIDs (randomly generated IDs to identify a unique installation, not the user).</li>
     </ul>
 
-    <h2>2. In-App Purchases & Payment Information</h2>
-    <p>Our App offers In-App Purchases (e.g., premium card packs or features).</p>
+    <h2>2. Third-Party Services</h2>
+    <p>We use the following third-party services to ensure the App runs smoothly:</p>
+
+    <div class="firebase-box">
+        <strong>Google Firebase (Analytics & Crashlytics)</strong><br>
+        We use Firebase to analyze user behavior and report crashes. This data is aggregated and anonymized. Firebase does not provide us with your personal identity.<br>
+        For more information, please visit the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
+    </div>
+
+    <ul>
+        <li><strong>Apple Services:</strong> Used for App Store functionality, iCloud syncing, and processing In-App Purchases.</li>
+    </ul>
+
+    <h2>3. In-App Purchases & Payment Information</h2>
+    <p>Our App offers In-App Purchases (e.g., premium card packs).</p>
     <ul>
         <li><strong>We do not process payments:</strong> All financial transactions are handled directly by Apple via your Apple ID.</li>
         <li><strong>We do not see your financial data:</strong> We never have access to your credit card information or billing details. Apple simply notifies our App when a purchase is successfully completed so we can unlock the content for you.</li>
     </ul>
 
-    <h2>3. How We Use Information</h2>
-    <p>Since we collect minimal data, our usage is strictly limited to:</p>
+    <h2>4. How We Use Information</h2>
+    <p>We use the collected data for the following purposes:</p>
     <ul>
-        <li>Providing and maintaining the App's functionality.</li>
-        <li>Detecting, preventing, and addressing technical issues (bugs and crashes).</li>
-        <li>Verifying the status of your In-App Purchases.</li>
-    </ul>
-
-    <h2>4. Third-Party Services</h2>
-    <p>The App may use third-party services that may collect information used to identify your device for diagnostic purposes. These services include:</p>
-    <ul>
-        <li><strong>Apple Services:</strong> For App Store functionality, iCloud syncing (if applicable), and payment processing.</li>
+        <li>To provide and maintain the App.</li>
+        <li>To monitor the usage of the App (via Firebase Analytics).</li>
+        <li>To detect, prevent, and address technical issues (via Firebase Crashlytics).</li>
+        <li>To verify the status of your In-App Purchases.</li>
     </ul>
 
     <h2>5. Data Security</h2>
-    <p>The security of your data is important to us. Since the App does not store personal data on external servers, the risk of data breach is minimal. Any local data stored on your device is subject to your device's security settings (e.g., FaceID, Passcode).</p>
+    <p>The security of your data is important to us. Since the App does not store personal data on external servers (other than anonymous analytics data stored by Google), the risk of personal data breach is minimal.</p>
 
     <h2>6. Children’s Privacy</h2>
-    <p>Our App is designed for general audiences, including families. We do not knowingly collect personally identifiable information from children under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+    <p>Our App is designed for general audiences, including families. We do not knowingly collect personally identifiable information from children under the age of 13.</p>
 
     <h2>7. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this policy.</p>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
 
     <h2>8. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us:</p>
