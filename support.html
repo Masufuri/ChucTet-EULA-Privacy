@@ -3,137 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Support - Chúc Tết 2026</title>
+    <title>Support - Chúc Tết App</title>
     <style>
+        :root {
+            --primary-color: #d32f2f;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --link-color: #1976d2;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 0;
-            background-color: #f9f9f9;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
         }
-        .header {
-            background-color: #d32f2f; /* Festive Red */
-            color: white;
-            padding: 40px 20px;
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
             text-align: center;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-        .header p {
-            margin-top: 10px;
-            font-size: 16px;
-            opacity: 0.9;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            margin: -20px 20px 20px 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #d32f2f;
-            font-size: 20px;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        .faq-item {
-            margin-bottom: 20px;
-        }
-        .faq-question {
-            font-weight: bold;
-            font-size: 16px;
-            color: #222;
-            margin-bottom: 5px;
-        }
-        .faq-answer {
-            color: #555;
-            font-size: 15px;
-        }
-        .contact-box {
-            background-color: #f5f5f7;
+
+        .contact-info {
+            background: #fff5f5;
             padding: 20px;
             border-radius: 8px;
-            text-align: center;
-            margin-top: 40px;
+            border-left: 5px solid var(--primary-color);
+            margin: 30px 0;
         }
-        .button {
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #444;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .faq-answer {
+            color: #666;
+        }
+
+        .btn-email {
             display: inline-block;
-            background-color: #d32f2f;
+            background-color: var(--primary-color);
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            transition: background 0.3s;
             margin-top: 10px;
         }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 12px;
-            color: #888;
-        }
-        .footer a {
-            color: #888;
+
+        .btn-email:hover {
+            background-color: #b71c1c;
             text-decoration: none;
-            margin: 0 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>Chúc Tết 2026</h1>
-    <p>Support & Help Center</p>
-</div>
-
 <div class="container">
-    <p>Welcome to the support page for <strong>Chúc Tết 2026</strong>. Here you can find answers to common questions or contact us directly if you need further assistance.</p>
+    <h1>Support Center</h1>
+    
+    <p style="text-align: center;">How can we help you with <strong>Chúc Tết</strong> app?</p>
 
-    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div class="contact-info">
+        <h3>Contact Developer</h3>
+        <p>If you have any issues, feedback, or feature requests, please contact me directly via email:</p>
+        <p><strong>Developer:</strong> Thoi Nguyen</p>
+        <p><strong>Email:</strong> d4nteam@gmail.com</p>
+        <a href="mailto:d4nteam@gmail.com" class="btn-email">Send an Email</a>
+    </div>
+
+    <h2>Frequently Asked Questions (FAQs)</h2>
 
     <div class="faq-item">
-        <div class="faq-question">1. I cannot save the greeting card to my Photos.</div>
-        <div class="faq-answer">
-            This usually happens if the app doesn't have permission to access your Photo Library. Please go to your iPhone <strong>Settings > Privacy & Security > Photos</strong>, find "Chúc Tết 2026", and select "Add Photos Only" or "Full Access". Then try saving again.
-        </div>
+        <span class="faq-question">1. How do I save the greeting cards I created?</span>
+        <span class="faq-answer">After finishing your design in "Create New Card" or "Edit Template", tap the Save/Download icon. Please make sure you have allowed the app to access your Photo Library.</span>
     </div>
 
     <div class="faq-item">
-        <div class="faq-question">2. Is the app free?</div>
-        <div class="faq-answer">
-            Yes, the app is completely free to download and use.
-        </div>
+        <span class="faq-question">2. Can I customize the Lucky Wheel?</span>
+        <span class="faq-answer">Yes! Go to the Lucky Wheel feature, you can edit the text for each segment of the wheel to suit your party or family gathering.</span>
     </div>
 
     <div class="faq-item">
-        <div class="faq-question">3. Can I upload my own photos?</div>
-        <div class="faq-answer">
-            Currently, the app focuses on providing high-quality designed templates where you can customize wishes and text. We do not support uploading personal photos onto the cards in this version.
-        </div>
+        <span class="faq-question">3. Why can't I upload my photo to the template?</span>
+        <span class="faq-answer">Please check your device Settings > Privacy > Photos and ensure that <strong>Chúc Tết</strong> has "All Photos" or "Selected Photos" access.</span>
     </div>
 
-    <h2>Contact Us</h2>
-    <div class="contact-box">
-        <p>Still need help? found a bug? or just want to say Happy New Year?</p>
-        <p>Please email us at:</p>
-        <a href="mailto:d4nteam@gmail.com" class="button">Email Support</a>
-        <p style="margin-top:10px; font-size: 14px; color: #666;">d4nteam@gmail.com</p>
+    <div class="faq-item">
+        <span class="faq-question">4. Are the recipes and Tet customs content updated?</span>
+        <span class="faq-answer">We regularly update the content to ensure accuracy for each Lunar New Year. If you find any incorrect information, please let us know.</span>
     </div>
+
+    <div class="faq-item">
+        <span class="faq-question">5. Is my data stored on a server?</span>
+        <span class="faq-answer">No. Most of your data (custom Lucky Wheel items, edited photos) is stored locally on your device to protect your privacy.</span>
+    </div>
+
+    <h2>Technical Support</h2>
+    <p>For crash reports or bugs, please include the following in your email for faster support:</p>
+    <ul>
+        <li>Your device model (e.g., iPhone 15 Pro)</li>
+        <li>iOS version (e.g., iOS 17.2)</li>
+        <li>A brief description of what happened before the crash.</li>
+    </ul>
+
 </div>
 
-<div class="footer">
-    <a href="privacy.html">Privacy Policy</a> | 
-    <a href="eula.html">Terms of Use (EULA)</a>
-    <br><br>
-    &copy; 2026 Thoi Nguyen. All Rights Reserved.
-</div>
+<footer>
+    &copy; 2024 Thoi Nguyen. All rights reserved.
+</footer>
 
 </body>
 </html>
